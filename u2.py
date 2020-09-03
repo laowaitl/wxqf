@@ -9,7 +9,7 @@ import uiautomator2 as u2
 import time
 import re
 
-d = u2.connect('7pkr5prgfy5hmrnb') # connect to device
+d = u2.connect('你自己设备的编号填这里') # connect to device
 print(d.info)
 
 
@@ -29,6 +29,7 @@ def getQunName(qunlist):
 
 def qf(QNlist):
     for item in QNlist:
+        #过滤带圈字母，防止群名因含有带圈字母而搜索不到群名
         qn = re.sub(u'[\u24b6-\u24e9]','',item)
         print(qn)
 
