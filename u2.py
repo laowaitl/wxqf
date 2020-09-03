@@ -1,7 +1,7 @@
 
 #-*- codeing = utf-8 -*-
 #@Time : 2020/9/2 10:32
-#@Author :张弘彪
+#@Author :wai
 #@Flie : u2.py
 #@Software : PyCharm
 
@@ -40,7 +40,7 @@ def qf(QNlist):
         d(resourceId="com.tencent.mm:id/g78").click()
 
         d.set_fastinput_ime(True)  # 切换成FastInputIME输入法
-        d.send_keys("建设厅ABC/管理岗/特工/标准员/二建继续教育代看考试 \nAB新培报名/网课视频加急处理欢迎咨询\n快速处理钜惠！张 18388367047同微信   ")  # adb广播输入 输入群名
+        d.send_keys("群发内容")  # adb广播输入 输入群名
         d.set_fastinput_ime(False)  # 切换成正常的输入法
 
         d(resourceId="com.tencent.mm:id/anv", text="发送").click()
